@@ -1,25 +1,30 @@
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   background: #f5b8db;
-}
+  color: #333;
+
 
 .container {
   display: grid;
+  
   grid-template-columns: 1fr 2fr;
   min-height: 100vh;
 }
 
-/* Sidebar */
 .sidebar {
   background: #fdbce8;
   padding: 20px;
 }
 
 .sidebar .foto {
-  width: 60%;
+
+  max-width: 60%;
+  height: auto; 
+  display: block; 
+  margin: 0 auto 20px; 
   border-radius: 10px;
-  margin-bottom: 20px;
 }
 
 .sidebar h3 {
@@ -38,7 +43,12 @@ body {
   margin: 8px 0;
 }
 
-/* Conteúdo principal */
+.sidebar .resumo { 
+    line-height: 1.5;
+}
+
+
+
 .conteudo {
   background: #fff;
   padding: 40px;
@@ -55,12 +65,68 @@ header h2 {
   color: #000000;
 }
 
+header ul { 
+    list-style: none;
+    padding: 0;
+}
+
+header ul li {
+    margin-bottom: 5px;
+}
+
 section {
   margin-top: 30px;
 }
 
-section h3 {
+section h3,
+section h2 { 
   border-bottom: 2px solid #fda4e7;
   padding-bottom: 5px;
   font-size: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+   
+    grid-template-columns: 1fr;
+  }
+
+  .conteudo {
+    padding: 25px; 
+
+  header h1 {
+    font-size: 24px; 
+  }
+
+  section h3, section h2 {
+    font-size: 18px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .sidebar {
+      padding: 15px;
+  }
+
+  .sidebar .foto {
+      max-width: 50%; 
+  }
+  
+  .conteudo {
+    padding: 20px; 
+
+  header h1 {
+      font-size: 22px;
+  }
+
+  header h2 {
+      font-size: 16px;
+  }
+
+ 
+  section ul {
+      padding-left: 20px;
+  }
 }
