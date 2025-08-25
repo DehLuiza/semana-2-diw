@@ -2,8 +2,10 @@
 # template-diw-20251-semana-02
 
 ## Informações Gerais
-- Nome: 
-- Matricula:
+- Nome: Debora Luiza 
+- Matricula:  875055
+![alt text](atvddiw.png)
+![alt text](atvddiw02.png)
 
 ## Print da tela da página criada (Curriculum Vitae)
 
